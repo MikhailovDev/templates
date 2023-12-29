@@ -1,0 +1,6 @@
+#ifndef TWO_OBJECTS_IMPL_HPP
+#define TWO_OBJECTS_IMPL_HPP
+
+
+
+#endif // !TWO_OBJECTS_IMPL_HPP
