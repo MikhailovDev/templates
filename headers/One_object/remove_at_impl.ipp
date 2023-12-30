@@ -14,4 +14,22 @@ void removeAt(T (&arr)[COUNT], std::size_t index) {
     arr[COUNT - 1] = 0;
 }
 
+template <typename T>
+void removeAt(T*& arr, std::size_t count, std::size_t index) {
+    if (index < 0 || index >= count)
+        return;
+
+    T* nArr = new T[count - 1];
+    std::size_t i {};
+    for (; i < index; ++i) {
+        nArr[i] = arr[i];
+    }
+    for (; i < count - 1; ++i) {
+        nArr[i] = arr[i + 1];
+    }
+
+    delete[] arr;
+    arr = nArr;
+}
+
 #endif // !REMOVE_AT_IMPL_HPP
