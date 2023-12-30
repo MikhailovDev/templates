@@ -12,4 +12,13 @@ const T* findFirstIf(const T (&arr)[COUNT], PredT predicate) {
     return nullptr;
 }
 
+template <typename T, typename PredT>
+const T* findFirstIf(const T* arr, std::size_t count, PredT predicate) {
+    for (const T* i {arr}; i < arr + count; ++i)
+        if ((*predicate)(*i))
+            return i;
+
+    return nullptr;
+}
+
 #endif // !FIND_FIRST_IF_IMPL_HPP
