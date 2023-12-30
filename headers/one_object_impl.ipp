@@ -15,4 +15,11 @@ inline void putAt(T* arr, std::size_t count, std::size_t index, T item) {
         arr[index] = item;
 }
 
+template <typename T, std::size_t ROWS, std::size_t COLS>
+inline void putAt(T (&mtrx)[ROWS][COLS], std::size_t row, std::size_t col,
+                  T item) {
+    if (row >= 0 && row < ROWS && col >= 0 && col < COLS)
+        mtrx[row][col] = item;
+}
+
 #endif // !ONE_OBJECT_IMPL_HPP
