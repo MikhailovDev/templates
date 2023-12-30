@@ -1,6 +1,8 @@
 #ifndef FIND_FIRST_IF_HPP
 #define FIND_FIRST_IF_HPP
 
+#include <cstddef>
+
 template <typename T, std::size_t COUNT, typename PredT>
 const T* findFirstIf(const T (&arr)[COUNT], PredT predicate);
 
