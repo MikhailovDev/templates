@@ -1,9 +1,7 @@
-#include "func_ptr_operations.hpp"
 #ifndef FUNC_PTR_OPERATIONS_IMPL_HPP
 #define FUNC_PTR_OPERATIONS_IMPL_HPP
 
-#include <stdexcept>
-#include <cassert>
+#include "func_ptr_operations.hpp"
 
 template <typename T1, typename T2>
 inline auto sum(T1 a, T2 b) -> decltype(a + b) {
