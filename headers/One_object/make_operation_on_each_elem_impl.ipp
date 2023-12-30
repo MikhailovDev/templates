@@ -9,9 +9,16 @@ void makeOperationOnEachElem(T& elem, OperationT operation) {
 }
 
 template <typename T, std::size_t COUNT, typename OperationT>
-void makeOperationOnEachElem(T (&elem)[COUNT], OperationT operation) {
+void makeOperationOnEachElem(T (&arr)[COUNT], OperationT operation) {
     for (std::size_t i {}; i < COUNT; ++i) {
-        elem[i] = (*operation)(elem[i]);
+        arr[i] = (*operation)(arr[i]);
+    }
+}
+
+template <typename T, typename OperationT>
+void makeOperationOnEachElem(T* arr, std::size_t count, OperationT operation) {
+    for (std::size_t i {}; i < count; ++i) {
+        arr[i] = (*operation)(arr[i]);
     }
 }
 
