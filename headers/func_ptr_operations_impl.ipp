@@ -36,4 +36,14 @@ T getFactorial(T nmb) {
     return nmb * getFactorial(nmb - 1);
 }
 
+template <typename T>
+T getFibonacciNmb(T nmb) {
+    std::cout << "count: " << ++c << std::endl;
+    if (nmb == 0 || nmb == 1) {
+        return 1;
+    }
+
+    return getFibonacciNmb(nmb - 1) + getFibonacciNmb(nmb - 2);
+}
+
 #endif // !FUNC_PTR_OPERATIONS_IMPL_HPP
