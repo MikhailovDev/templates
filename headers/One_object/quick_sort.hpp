@@ -2,6 +2,9 @@
 #define QUICK_SORT_HPP
 
 template <typename T>
+void quickSort(T* arr, int low, int high);
+
+template <typename T>
 int getPivot(T* arr, int low, int high);
 
 template <typename T>
