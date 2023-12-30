@@ -3,5 +3,6 @@
 
 #include "One_object/put_at.hpp"
 #include "One_object/remove_at.hpp"
+#include "One_object/quick_sort.hpp"
 
 #endif // !ONE_OBJECT_HPP
