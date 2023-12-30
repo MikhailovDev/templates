@@ -1,6 +1,7 @@
-#include "two_objects.hpp"
 #ifndef TWO_OBJECTS_IMPL_HPP
 #define TWO_OBJECTS_IMPL_HPP
+
+#include "two_objects.hpp"
 
 template <typename Dest, typename T1, typename T2, typename Func>
 inline void setObjSplittedByOneWay(Dest& dest, T1 first, T2 second, Func way) {
