@@ -2,6 +2,7 @@
 #define TWO_OBJECTS_HPP
 
 #include "func_ptr_operations.hpp"
+#include <cstddef>
 
 template <typename Dest, typename T1, typename T2, typename Func>
 void setObjSplittedByOneWay(Dest& dest, T1 first, T2 second, Func way);
