@@ -27,4 +27,13 @@ inline auto div(T1 a, T2 b) -> decltype(a / b) {
     return a / b;
 }
 
+template <typename T>
+T getFactorial(T nmb) {
+    if (nmb == 0) {
+        return 1;
+    }
+
+    return nmb * getFactorial(nmb - 1);
+}
+
 #endif // !FUNC_PTR_OPERATIONS_IMPL_HPP

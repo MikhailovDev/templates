@@ -5,5 +5,6 @@
 #include "One_object/remove_at.hpp"
 #include "One_object/quick_sort.hpp"
 #include "One_object/find_first_if.hpp"
+#include "func_ptr_operations.hpp"
 
 #endif // !ONE_OBJECT_HPP
