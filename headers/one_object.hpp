@@ -2,5 +2,6 @@
 #define ONE_OBJECT_HPP
 
 #include "One_object/put_at.hpp"
+#include "One_object/remove_at.hpp"
 
 #endif // !ONE_OBJECT_HPP
