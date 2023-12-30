@@ -1,7 +1,7 @@
-#ifndef ONE_OBJECT_IMPL_HPP
-#define ONE_OBJECT_IMPL_HPP
+#ifndef PUT_AT_IMPL_HPP
+#define PUT_AT_IMPL_HPP
 
-#include "one_object.hpp"
+#include "put_at.hpp"
 
 template <typename T, std::size_t COUNT>
 inline void putAt(T (&arr)[COUNT], std::size_t index, T item) {
@@ -29,4 +29,4 @@ inline void putAt(T** mtrx, std::size_t rows, std::size_t cols, std::size_t row,
         mtrx[row][col] = item;
 }
 
-#endif // !ONE_OBJECT_IMPL_HPP
+#endif // !PUT_AT_IMPL_HPP
