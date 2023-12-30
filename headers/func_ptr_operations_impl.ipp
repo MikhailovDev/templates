@@ -38,7 +38,6 @@ T getFactorial(T nmb) {
 
 template <typename T>
 T getFibonacciNmb(T nmb) {
-    std::cout << "count: " << ++c << std::endl;
     if (nmb == 0 || nmb == 1) {
         return 1;
     }
