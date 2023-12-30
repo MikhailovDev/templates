@@ -22,4 +22,11 @@ inline void putAt(T (&mtrx)[ROWS][COLS], std::size_t row, std::size_t col,
         mtrx[row][col] = item;
 }
 
+template <typename T>
+inline void putAt(T** mtrx, std::size_t rows, std::size_t cols, std::size_t row,
+                  std::size_t col, T item) {
+    if (row >= 0 && row < rows && col >= 0 && col < cols)
+        mtrx[row][col] = item;
+}
+
 #endif // !ONE_OBJECT_IMPL_HPP
